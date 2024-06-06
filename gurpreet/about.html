@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            position: relative; /* Required for absolute positioning of overlay */
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            position: relative; /* Ensure z-index works correctly */
+            z-index: 1; /* Ensure text appears above overlay */
+            padding: 0 20px; /* Added padding for better readability */
+        }
+
+        h1 {
+            color: #fff; /* White text color */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff; /* White text color */
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #dde2e7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Religious jewelry is a form of adornment that carries spiritual or religious significance. It is often worn as a symbol of faith, devotion, or cultural heritage. Religious jewelry can take many forms, including necklaces, bracelets, rings, earrings, and pendants. These pieces of jewelry are often adorned with symbols, scriptures, or images that are meaningful to the wearer's faith, such as crosses, stars of David, Om symbols, or verses from religious texts.</p>
+
+        <p>In addition to serving as personal expressions of faith, religious jewelry is often used in religious ceremonies and rituals. For example, in Christianity, a cross necklace might be worn as a symbol of Christ's sacrifice, while in Hinduism, a pendant with the Om symbol might be worn for spiritual protection.</p>
+        
+        <p>Overall, religious jewelry serves as a tangible reminder of one's beliefs and can be a source of comfort, inspiration, and connection to one's faith.</p>
+
+        <p>For any inquiries, please contact us at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+
+        <a href="index.html" class="btn">Back to Home</a>
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video">
+                <source src="video/background video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        var style = document.createElement('style');
+        style.textContent = `
+            body {
+                background-image: url('C:\Users\preet\OneDrive\Desktop\gurpreet\image\bracelette .jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
